@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS ------------------------------------------------------------->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Bootstrap CSS -------------------------------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Title ------------------------------------------------------------>
+  <title>Resorts do Brasil - Os melhores resorts do país</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-transparent pt-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./Resorts-Brasil.html"><img src="./images/logo.svg" alt="" class="logoRB"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./Destinos_Nacionais.html" id="navItem">Destinos
+                Nacionais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html" id="navItem">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Reserva.html" id="navItem">Faça sua Reserva</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" id="navItem">
+                Fale Conosco
+              </a>
+              <ul class="dropdown-menu">
+                <li><span class="dropdown-item-text">Atendimento: 3222-2333</span></li>
+                <li><a class="dropdown-item" href="https://www.whatsapp.com/">Whatsapp: (11)
+                    99999-7777</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="text-center title-3">Faça sua Reserva</h1>
+    <div class="container">
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Hotéis Disponíveis</label>
+        <select class="form-select" id="inputGroupSelect01" required>
+          <option selected disabled>Escolha uma opção</option>
+          <option value="1">Essenza Dune Hotel</option>
+          <option value="2">Enotel Porto de Galinhas</option>
+          <option value="3">Pousada Do Porto</option>
+          <option value="4">Cassino Resort All Inclusive</option>
+          <option value="5">Hotel Fasano Angra dos Reis</option>
+          <option value="6">Hotel Bangalôs da Serra</option>
+        </select>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+        <label for="start">Data do check in:</label>
+        <input type="date" id="start" name="trip-start" value="2023-01-07" min="2023-01-07" max="2023-12-31">
+      </div>
+      <br>
+      <div>
+        <label for="start">Data do check out:</label>
+        <input type="date" id="start" name="trip-start" value="2023-01-08" min="2023-01-08" max="2023-12-31">
+      </div>
+    </div>
+    <div class="container btn-js">
+      <div class="d-grid gap-2 col-2 mx-auto">
+        <button class="btn btn-warning" type="submit" onclick="Reservar()">
+          <h6>RESERVAR</h6>
+        </button>
+      </div>
+    </div>
+    <div>
+      <div class="container pt-5 pb-5">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner" width="100px">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./images/Jericoacoara.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Essenza Dune Hotel</h5>
+                <p>Experimente descansar nas redes armadas na água doce, sentindo a brisa
+                  e
+                  todo cenário ao redor. Renove-se!</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./images/Porto-de-Galinhas.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Enotel Porto de Galinhas</h5>
+                <p>Localizado em Porto de Galinhas, em Pernambuco, o Enotel Porto de
+                  Galinhas All Inclusive é um paraíso à beira-mar com
+                  extensa praia de areias brancas, águas mornas e cristalinas.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Barreirinhas.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pousada Do Porto</h5>
+                <p>Situada às margens do Rio Preguiças, esta pousada básica com fachada
+                  colorida fica a 10 km do Parque Nacional dos
+                  Lençóis Maranhenses e a 17 km da rodovia BR-402.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Poços-das-caldas.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Cassino Resort All Inclusive</h5>
+                <p>Conheça uma nova experiência em Resort e embarque nessa aventura. Agora
+                  inicia-se uma nova história, um novo conceito de
+                  Resort, mas que traz em sua essência toda a mistura do legado local.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Angra-dos-Reis.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hotel Fasano Angra dos Reis</h5>
+                <p>Fornecendo serviços impecáveis, o novo Hotel Fasano Angra dos Reis está
+                  situado na Praia do Frade e oferece acomodações
+                  luxuosas e espaçosas com vista do mar. A propriedade conta com um spa sofisticado e um
+                  centro de bem-estar para
+                  tratamentos mentais e corporais.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Gramado.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hotel Bangalôs da Serra</h5>
+                <p>Situado em Gramado, em meio à Serra Gaúcha, o Hotel Bangalôs da Serra
+                  oferece tranquilidade e bem-estar que, aliados a
+                  um atendimento familiar, tornam inesquecível a sua estadia!</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <span class="navbar-text" id="navItem2">
+          &copy;2022 Resorts do Brasil - Todos os direitos reservados. by <span>Jairon
+            Rodrigo
+          </span>
+      </div>
+    </nav>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&family=Rubik:wght@400;500&display=swap");
+
+body {
+  background-image: url("../images/Wallpaper-1.jpg");
+  background-size: cover;
+}
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 50px;
+}
+.logoRB {
+  width: 150px;
+}
+
+#navItem {
+  color: whitesmoke;
+}
+
+#navItem2 {
+  color: darkcyan;
+}
+
+#TitleImage {
+  font-family: "Rowdies";
+  padding-top: 250px;
+  font-weight: bold;
+  color: khaki;
+  border: 2px solid white;
+}
+
+.title-1 {
+  font-size: 20px;
+  color: whitesmoke;
+}
+.Title-2 {
+  font-size: 60px;
+}
+
+.lineTitle {
+  border: 5px solid black;
+  width: 40px;
+}
+
+.text-content {
+  font-family: "Rowdies";
+}
+
+.title-3 {
+  font-family: "Rowdies";
+  padding: 40px 40px;
+}
+
+.input-color {
+  color: khaki;
+}
+
+.footer {
+  background-color: transparent;
+  height: 15vh;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-color {
+  text-decoration: none;
+  color: black;
+}
